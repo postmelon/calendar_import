@@ -1,0 +1,52 @@
+
+body {
+    background-color: rgba(25, 25, 25, 0.95);
+  }
+
+.months {
+    text-align: center;
+    font-family: Monospace;
+    font-size: 40px;
+    color: aliceblue;
+    padding-bottom: 60px;
+    padding-top: 30px;
+    
+
+}
+.days {
+    display: flex;
+    margin: 25px 0 10px;
+    text-align: right;
+  }
+.day {
+    color: rgba(145, 145, 145, 0.7);
+    font-family: Monospace;
+    font-size: 20px;
+    width: calc(100% /8);
+    text-align: center;
+    padding: 15px;
+
+}
+.dates {
+    color: aliceblue;
+    font-family: Monospace;
+    font-size: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    height: 500px;
+    border-top: 1px solid #333333;
+    border-right: 1px solid #333333;
+
+}
+.date {
+    width: calc(100% /9);
+    padding: 20px;
+    text-align: right;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #333333;
+    border-right: 1px solid #333333;
+  }
+.day:nth-child(7n + 1),
+.date:nth-child(7n + 1) {
+  color: #D13E3E;
+}
